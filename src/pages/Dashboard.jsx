@@ -60,9 +60,9 @@ const Dashboard = () => {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-blue-400 to-blue-600 text-white p-6">
+    <div className="bg-gradient-to-b min-h-screen from-blue-400 to-blue-600 text-white p-6">
       {/* Header */}
-      <div className="flex justify-between items-center mb-6">
+      <div className="flex  justify-between items-center mb-6">
         <div>
           <h1 className="text-2xl font-semibold">Current Location</h1>
           <p className="text-lg">{date}</p>
@@ -99,12 +99,12 @@ const Dashboard = () => {
           <p>{data.current.wind_speed_10m} km/h</p>
         </div>
         <div className="bg-white bg-opacity-10 p-4 rounded-lg text-center">
-          <p>Sunrise</p>
-          <p>6:45 AM</p>
+          <p>Rain</p>
+          <p>{data.current.rain}</p>
         </div>
         <div className="bg-white bg-opacity-10 p-4 rounded-lg text-center">
-          <p>Sunset</p>
-          <p>6:30 PM</p>
+          <p>Snowfall</p>
+          <p>{data.current.snowfall}</p>
         </div>
       </div>
     </div>
